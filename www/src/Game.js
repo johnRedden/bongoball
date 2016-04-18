@@ -76,18 +76,20 @@ BasicGame.Game.prototype = {
         this.load.image('grabber', 'asset/BongoGrabberTexture.png');
         this.load.image('ball', 'asset/BongoBall.png');
         //this.load.image('blueball', 'asset/BongoBallBlue.png');
-        this.load.image('paddle', 'asset/BongoPaddle.png');
+        this.load.image('paddle', 'asset/cageBunny.png');
         this.load.image('cloud', 'asset/cloud.png');
         
-        this.load.spritesheet("deathrock", "asset/rock_death.png", 90, 79, 2);
-        this.load.spritesheet("bluebird", "asset/birdSheet.png", 132, 95, 4);
+        this.load.image('cloud', 'asset/cloud.png');
+        this.load.spritesheet("deathrock", "asset/image03.png", 64, 64, 1);
+        //this.load.spritesheet("deathrock", "asset/rock_death.png", 90, 79, 2);
+        this.load.spritesheet("bluebird", "asset/blueButterfly.png", 64, 64, 6);
     },
 
     create: function () {
         
         this.clouds = this.add.group();
         
-        for(var i = 0; i<3; i++){
+        for(var i = 0; i<5; i++){
 			var cloud = this.clouds.create(this.rnd.integerInRange(-50,this.world.width),this.rnd.integerInRange(30,200),'cloud');
             cloud.angle=this.rnd.integerInRange(-20,20);
             var rand = this.rnd.realInRange(0.4, 1);
@@ -100,7 +102,7 @@ BasicGame.Game.prototype = {
         
         this.blueBirds = this.add.group();
         
-        for(var i = 0; i<5; i++){
+        for(var i = 0; i<100; i++){
 			var bird = this.blueBirds.create(
                 this.rnd.integerInRange(-50,this.world.width),
                 this.rnd.integerInRange(30,200),
