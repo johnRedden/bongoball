@@ -76,7 +76,7 @@ BasicGame.Game.prototype = {
         this.load.image('grabber', 'asset/BongoGrabberTexture.png');
         this.load.image('ball', 'asset/BongoBall.png');
         //this.load.image('blueball', 'asset/BongoBallBlue.png');
-        this.load.image('paddle', 'asset/cageBunny.png');
+        this.load.image('paddle', 'asset/cagedBunny.png');
         this.load.image('cloud', 'asset/cloud.png');
         
         this.load.image('cloud', 'asset/cloud.png');
@@ -102,7 +102,7 @@ BasicGame.Game.prototype = {
         
         this.blueBirds = this.add.group();
         
-        for(var i = 0; i<100; i++){
+        for(var i = 0; i<5; i++){
 			var bird = this.blueBirds.create(
                 this.rnd.integerInRange(-50,this.world.width),
                 this.rnd.integerInRange(30,200),
@@ -157,6 +157,8 @@ BasicGame.Game.prototype = {
         
         this.deathRocks.children.forEach(function(rock){
             rock.body.setCircle(18);
+            rock.scale.setTo(.75,.75);
+
             rock.body.fixedRotation = true;
             rock.body.collideWorldBounds = false;
             rock.body.setCollisionGroup(this.deathRockCollisionGroup);
@@ -185,6 +187,7 @@ BasicGame.Game.prototype = {
             'paddle');
         // Set the anchor to the center of the sprite
         this.bongoball.anchor.setTo(0.5, 0.5);
+        this.bongoball.scale.setTo(.75,.5);
         
         // turn false the collision circle in production
 		this.physics.p2.enable(this.bongoball, false); //change to true to see hitcircle
