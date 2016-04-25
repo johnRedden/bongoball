@@ -13,6 +13,8 @@
 <preference name="windows-publisher-id"/>
 <platform name="windows">
 <preference name="Orientation" value="landscape"/></platform>
+<preference name="windows-target-version" value="10.0"/>
+<preference name="windows-phone-target-version" value="10.0"/>
 <!--creationInfo:{"src":"webapp/template-phaser-landscape-webapp/sample.zip","projectTypeName":"com.intel.xdk.projecttype.webapp"}-->
 <preference name="debuggable" value="false"/>
 <platform name="ios">

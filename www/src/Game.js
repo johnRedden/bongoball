@@ -72,7 +72,7 @@ BasicGame.Game.prototype = {
 
         this.load.audio('ballHit', ['asset/voice.wav']);
         
-        this.load.image('logo', 'asset/BongoLogo.png');
+        this.load.image('logo', 'asset/BongoLogoNew.png');
         this.load.image('grabber', 'asset/BongoGrabberTexture.png');
         this.load.image('ball', 'asset/BongoBall.png');
         //this.load.image('blueball', 'asset/BongoBallBlue.png');
@@ -80,7 +80,8 @@ BasicGame.Game.prototype = {
         this.load.image('cloud', 'asset/cloud.png');
         
         this.load.image('cloud', 'asset/cloud.png');
-        this.load.spritesheet("deathrock", "asset/image03.png", 64, 64, 1);
+        this.load.spritesheet("deathrock", "asset/jefeSprite.png", 90, 79, 2);
+        //this.load.spritesheet("deathrock", "asset/image03.png", 64, 64, 1);
         //this.load.spritesheet("deathrock", "asset/rock_death.png", 90, 79, 2);
         this.load.spritesheet("bluebird", "asset/blueButterfly.png", 64, 64, 6);
     },
@@ -157,7 +158,7 @@ BasicGame.Game.prototype = {
         
         this.deathRocks.children.forEach(function(rock){
             rock.body.setCircle(18);
-            rock.scale.setTo(.75,.75);
+            rock.scale.setTo(1,1);
 
             rock.body.fixedRotation = true;
             rock.body.collideWorldBounds = false;

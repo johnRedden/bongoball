@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "webapp/template-phaser-landscape-webapp/sample.zip",
       "projectGuid": "eeee03dd-848d-4f4f-9937-327cea317521",
-      "lastModifiedDate": 1460941887709,
+      "lastModifiedDate": 1461558806317,
       "creationDate": 1452980981421
     },
     "sourceDirectory": "www",
@@ -56,9 +56,9 @@
           "Orientation": "landscape",
           "deployment-target": "6"
         },
-        "isActive_": true,
-        "appName_": "bongoball",
-        "appID_": "xdk.intel.blank.phaser.game.template",
+        "isActive_": false,
+        "appName_": "elJefeRise",
+        "appID_": "com.eduNetSystems.elJefeRise",
         "appAccess_": {
           "mode": "whitelist",
           "network": [
@@ -74,7 +74,7 @@
         "excludedLibraries_": "",
         "certificateId_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "5.1.1",
+        "cordovaCLIVersion_": "5.4.1",
         "crosswalkVersion_": "14",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1",
@@ -89,7 +89,7 @@
           "windows-publisher-id": "",
           "Orientation": "landscape"
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "bongoball",
         "appID_": "xdk.intel.blank.phaser.game.template",
         "appAccess_": {
@@ -107,7 +107,7 @@
         "excludedLibraries_": "",
         "certificateId_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "5.1.1",
+        "cordovaCLIVersion_": "5.4.1",
         "crosswalkVersion_": "14",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1",
@@ -233,7 +233,7 @@
         "excludedLibraries_": "",
         "certificateId_": "",
         "appVersion_": "0.0.0.1",
-        "cordovaCLIVersion_": "5.1.1"
+        "cordovaCLIVersion_": "5.4.1"
       },
       "Android": {
         "platform_": "android",
@@ -246,28 +246,27 @@
           "Orientation": "landscape"
         },
         "isActive_": true,
-        "appName_": "bongoball",
-        "appID_": "xdk.intel.blank.phaser.game.template",
+        "appName_": "elJefeRise",
+        "appID_": "com.eduNetSystems.elJefeRise",
         "appAccess_": {
-          "mode": "legacy",
-          "network": [
-            "*"
-          ],
+          "mode": "whitelist",
+          "network": [],
           "intents": [],
-          "navigation": []
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
+        "certificateId_": "45sKDzrHuUSzfhvs8dKZ4A2",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "5.1.1",
+        "cordovaCLIVersion_": "5.4.1",
         "crosswalkVersion_": "15",
-        "appVersion_": "0.0.1",
+        "appVersion_": "0.0.2",
         "appDescription_": "Use this template to start creating Phaser based mobile game web apps.",
         "appAuthor_": "Intel XDK",
-        "appVersionCode_": "1"
+        "appVersionCode_": "2"
       }
     },
     "gameAssetDirectory": "asset",
