@@ -1,11 +1,8 @@
-# Butterfly Bounce
+# Butterfly Bounce/ Image Design by Sarah Redden
 
 https://cdn.rawgit.com/johnRedden/bongoball/master/www/index.html
 
 
-See [LICENSE.md](./LICENSE.md) for license terms and conditions.
-
-This template can be used for creating an Intel XDK game app using the open source game framework Phaser. It is a blank Phaser project, which contains the required files. To get start, please see the key file `app.js`.
 
 Intel(R) XDK
 -------------------------------------------
